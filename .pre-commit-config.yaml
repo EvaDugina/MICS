@@ -1,0 +1,15 @@
+repos:
+# - hooks:
+#   - entry: .hooks/prepare-commit-conventional-hook.py
+#     id: prepare-commit-conventional
+#     language: python
+#     name: Conventional Commit
+#     stages:
+#     - prepare-commit-msg
+#   repo: local
+- hooks:
+  - id: commitizen
+    stages:
+    - commit-msg
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.29.1
