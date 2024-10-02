@@ -14,3 +14,11 @@ repos:
     - commit-msg
   repo: https://github.com/commitizen-tools/commitizen
   rev: v3.29.1
+- hooks:
+  - entry: .hooks/prepare-commit-conventional-hook.py
+    id: pre-push-commitizen-bump
+    language: script
+    name: Commitizen Bump
+    stages:
+    - pre-push
+  repo: local
