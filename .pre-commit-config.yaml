@@ -15,7 +15,7 @@ repos:
   repo: https://github.com/commitizen-tools/commitizen
   rev: v3.29.1
 - hooks:
-  - entry: .hooks/prepare-commit-conventional-hook.py
+  - entry: .hooks/pre-push-commitizen-bump
     id: pre-push-commitizen-bump
     language: script
     name: Commitizen Bump
