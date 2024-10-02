@@ -12,10 +12,15 @@ pre-commit install --hook-type prepare-commit-msg
 pip install --user pipenv
 
 ### Init the virtual environment
+open console inside directory .hooks/
+
 pipenv install --dev pre-commit Commitizen toml
 pipenv run cz init
 pre-commit autoupdate
 pipenv run cz bump
+
+https://dev.to/okeeffed/semantic-versioning-in-python-with-git-hooks-5c5a
+https://github.com/commitizen-tools/commitizen
 
 ## Дополнительные источники / Полезные ссылки
 https://dev.to/jalvaradosegura/create-your-own-pre-commit-hook-3kh

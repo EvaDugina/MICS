@@ -1,4 +1,5 @@
 repos:
+# Хук проверки соответствия сообщения коммита стандратам Conventional Commits
 # - hooks:
 #   - entry: .hooks/prepare-commit-conventional-hook.py
 #     id: prepare-commit-conventional
